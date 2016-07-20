@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">IRDemo</string>
+
+    <string name="choose">Choose Demo Option:</string>
+
+    <string name="calibrate">Calibrate</string>
+    <string name="ave_pulse">Average Pulse: </string>
+    <string name="calibrate_toast">Please click remote button 5 times.</string>
+    <string name="calibrating">Calibrating... </string>
+    <string name="start_cal">Start Cal</string>
+
+    <string name="stepper_motor">Stepper Motor</string>
+    <string name="cw_str">Clockwise</string>
+    <string name="ccw_str">Counter-Clockwise</string>
+    <string name="enter_degrees">Enter Degrees: </string>
+    <string name="degrees">Degrees</string>
+    <string name="str_90">90</string>
+    <string name="str_180">180</string>
+    <string name="str_360">360</string>
+
+    <string name="pir_long">Passive Infrared Sensor</string>
+    <string name="pir">PIR Sensor</string>
+    <string name="pir_status_off">PIR is OFF</string>
+    <string name="pir_status_on">PIR is ON</string>
+    <string name="off_on">Off / On     </string>
+
+    <string name="led_block">LED Block</string>
+    <string name="all_leds">All LEDs</string>
+    <string name="row">Rowk</string>
+    <string name="column">Column</string>
+    <string name="specify_row">Specify Row: </string>
+    <string name="specify_col">Specify Column: </string>
+    <string name="led_block_off_on">LED Block</string>
+
+    <string name="led_block_status_all_leds_on">All LEDs On</string>
+    <string name="led_block_status_all_leds_off">All LEDs Off</string>
+    <string name="led_block_status_row">LED Block Row: </string>
+    <string name="led_block_status_col">LED Block Column: </string>
+    <string name="led_block_specific_led">Specific LED: </string>
+    <string name="led_block_status_diagonal">LED Block Diagonal: </string>
+    <string name="led_block_status_square">LED Block Square: </string>
+    <string name="led_block_on"> On </string>
+    <string name="led_block_off"> Off </string>
+
+    <string name="go_btn_lbl">GO</string>
+
+
+</resources>

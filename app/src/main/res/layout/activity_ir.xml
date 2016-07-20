@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.iot3.irdemo.IRActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:id="@+id/choose_tv"
+            android:text="@string/choose"
+            android:textSize="24sp"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ir_demo_options"
+            android:layout_below="@id/choose_tv"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:checkedButton="@+id/calibrate_rb"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calibrate_rb"
+                android:text="@string/calibrate"
+                />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cal_rel_lay"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin_double"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ave_pulse_lbl_tv"
+                        android:text="@string/ave_pulse"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ave_pulse_result_tv"
+                        android:layout_toRightOf="@id/ave_pulse_lbl_tv"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:text="80"
+                        />
+                </RelativeLayout>
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:id="@+id/stepper_motor_rb"
+                android:text="@string/stepper_motor"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin_double"
+                >
+
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/stepper_motor_rg"
+                    android:orientation="horizontal"
+                    android:checkedButton="@+id/cw"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cw"
+                        android:text="@string/cw_str"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_10"
+                        android:id="@+id/ccw"
+                        android:text="@string/ccw_str"
+                        />
+                </RadioGroup>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stepper_motor_rg"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin_10"
+                    android:id="@+id/x90_deg"
+                    android:text="@string/str_90"
+                    />
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stepper_motor_rg"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin_10"
+                    android:layout_toEndOf="@id/x90_deg"
+                    android:id="@+id/x180_deg"
+                    android:text="@string/str_180"
+                    />
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stepper_motor_rg"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin_10"
+                    android:layout_toEndOf="@id/x180_deg"
+                    android:id="@+id/x360_deg"
+                    android:text="@string/str_360"
+                    />
+
+            </RelativeLayout>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:id="@+id/pir_rb"
+                android:text="@string/pir"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_double"
+                >
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:id="@+id/pir_switch"
+                    android:text="@string/off_on"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_alignBottom="@id/pir_switch"
+                    android:id="@+id/pir_status"
+                    android:text="@string/pir_status_off"
+                    android:layout_toRightOf="@id/pir_switch"
+
+                    />
+
+            </RelativeLayout>
+
+        </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/choose_tv"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_double"
+        android:id="@+id/go_btn"
+        android:text="@string/go_btn_lbl"
+        android:onClick="OnGoButtonClick"
+        />
+
+</RelativeLayout>
